@@ -32,6 +32,67 @@
                 minlength="3"
                 maxlength="10"
               />
+              <label for="lastName">Last Name</label>
+              <input
+                type="text"
+                name="lastName"
+                id="lastName"
+                required
+                minlength="3"
+                maxlength="10"
+              />
+            </div>
+            <div class="second-row">
+              <label for="weight">Weight</label>
+              <input
+                type="number"
+                name="weight"
+                id="weight"
+                required
+                min="1"
+                max="100"
+              />
+              <label for="height">Height</label>
+              <input
+                type="number"
+                name="height"
+                id="height"
+                required
+                min="1"
+                max="100"
+              />
+            </div>
+            <div class="third-row">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+                title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters"
+                required
+                minlength="6"
+                maxlength="10"
+              />
+              <label for="cpassword">Confirm Password</label>
+              <input
+                type="password"
+                name="cpassword"
+                id="cpassword"
+                required
+                minlength="6"
+                maxlength="10"
+              />
+            </div>
+            <div class="fourth-row">
+              <p id="error"></p>
+            </div>
+            <div class="fifth-row">
+              <label for="cat">Are you a cat?</label>
+              <input type="checkbox" id="cat" name="cat" checked />
+            </div>
+            <div class="submit-button">
+              <button type="submit">Meow!</button>
             </div>
           </div>
         </form>
