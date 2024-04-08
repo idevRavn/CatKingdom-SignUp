@@ -63,3 +63,32 @@ p {
   font-size: 0.8rem;
   color: #686868;
 }
+
+.cat-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5vh;
+}
+
+.first-row {
+  display: flex;
+  align-items: center;
+  gap: 5vh;
+}
+
+label {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  min-width: 30%;
+}
+
+input {
+  padding: 2%;
+  border: 1px solid #c1c3c7;
+  border-radius: 5px;
+  font-size: 0.7rem;
+  font-weight: 300;
+  min-width: 30%;
+}
